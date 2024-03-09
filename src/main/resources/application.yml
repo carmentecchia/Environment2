@@ -1,0 +1,13 @@
+
+environment: test
+myCustomVarTree:
+  customVar: Hello from Test
+server:
+  port: 4000
+---
+environment: prod
+myCustomVarTree:
+  customVar: Hello from Prod
+server:
+  port: 8000
+#Ho messo la porta 8000 perche la 5000 non mi andava
