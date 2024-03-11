@@ -1,13 +1,20 @@
-
-environment: test
+server:
+  port: 7070
+---
+spring:
+  config:
+    activate:
+      on-profile: test
 myCustomVarTree:
   customVar: Hello from Test
 server:
   port: 4000
 ---
-environment: prod
+spring:
+  config:
+    activate:
+      on-profile: prod
 myCustomVarTree:
   customVar: Hello from Prod
 server:
   port: 8000
-#Ho messo la porta 8000 perche la 5000 non mi andava
